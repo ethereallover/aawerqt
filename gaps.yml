@@ -19,7 +19,7 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
                 - matchExpressions:
-                  - key: {{ sit1 }}
+                  - key: {{ sit }}
                     operator: In
                     values:
                       - {{ beijingfh }}
