@@ -1,0 +1,35 @@
+<Category fileDes="参数配置" id="0850bf7d53fd4c3e83932bfdf67a748d" name="root">
+  <Category id="351d027ac70148328871b85e2bf1375a" name="数据库">
+    <Parameter id="5b21ef94d9b6496bb4b6ee8faa9cf96e" key="jdbc.databaseType" value="" title="数据库类型" effectiveAfterRestart="true">
+      <des>只支持 mysql/oracle/db2</des>
+    </Parameter>
+    <Parameter id="24a41bc3376a4dfeab422c58f731f03a" key="jdbc.driver" value="" title="数据库驱动" effectiveAfterRestart="true">
+      <des>db2        	com.ibm.db2.jcc.DB2Driver&#xd;
+mysql     	com.mysql.cj.jdbc.Driver (mysql-connector-java.jar 6.0以上版本)&#xd;
+		com.mysql.jdbc.Driver (mysql-connector-java.jar 6.0以下版本)&#xd;
+oracle    	oracle.jdbc.OracleDriver</des>
+    </Parameter>
+    <Parameter id="45bcf1a231a745b59d25561fb456877b" key="jdbc.url" value="" title="数据库地址" effectiveAfterRestart="false">
+      <des>mysql格式   	jdbc:mysql://ip:port/dbname &#xd;
+oracle格式  	jdbc:oracle:thin:@ip:port:dbname &#xd;
+db2格式      	jdbc:db2://ip:port/dbname</des>
+    </Parameter>
+    <Parameter id="09a3e5536b994beea14daa14c2058730" key="jdbc.username" value="" title="用户名" effectiveAfterRestart="false">
+      <des></des>
+    </Parameter>
+    <Parameter id="059d653c13824b8d8868834b5b2e8284" key="jdbc.password" value="" title="密码" effectiveAfterRestart="false">
+      <des></des>
+    </Parameter>
+    <Parameter id="964e38a07bbf4cc199d3c0610e7d283e" key="jdbc.pool.validationQuery" value="" title="校验sql" effectiveAfterRestart="false">
+      <des>SQL查询,用来验证从连接池取出的连接,在将连接返回给调用者之前.查询必须是一个SQL SELECT并且必须返回至少一行记录&#xd;
+Mysql		select 1&#xd;
+DB2			select 1 from sysibm.sysdummy1&#xd;
+ORACLE		select 1 from dual</des>
+    </Parameter>
+  </Category>
+  <Category fileDes="" id="1e6f2c10ddb04db199ccb2ddb943ecb5" name="日志">
+    <Parameter fileDes="" id="e3003f9894464478b581b7a49836f2e4" key="gaps.log.level" value="debug" title="日志级别" effectiveAfterRestart="false">
+      <des>平台日志级别主要有info/warn/error/debug</des>
+    </Parameter>
+  </Category>
+</Category>

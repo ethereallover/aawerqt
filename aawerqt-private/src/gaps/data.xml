@@ -1,0 +1,13 @@
+<com.hundsun.gaps.navigator.resource.ResourceMapping>
+  <entry>
+    <string>\aawerqt-private</string>
+    <com.hundsun.gaps.navigator.resource.GapsResourceInfo>
+      <type>APPGROUP</type>
+      <name>私有应用组</name>
+      <canDelete>true</canDelete>
+      <publicGroup>false</publicGroup>
+      <publicApp>false</publicApp>
+      <packageGroup>false</packageGroup>
+    </com.hundsun.gaps.navigator.resource.GapsResourceInfo>
+  </entry>
+</com.hundsun.gaps.navigator.resource.ResourceMapping>

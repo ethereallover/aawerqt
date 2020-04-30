@@ -1,0 +1,13 @@
+<com.hundsun.gaps.navigator.resource.ResourceMapping>
+  <entry>
+    <string>\aawerqt-packagegroup-package</string>
+    <com.hundsun.gaps.navigator.resource.GapsResourceInfo>
+      <type>APP</type>
+      <name>打包工程</name>
+      <canDelete>false</canDelete>
+      <publicGroup>false</publicGroup>
+      <publicApp>false</publicApp>
+      <packageGroup>false</packageGroup>
+    </com.hundsun.gaps.navigator.resource.GapsResourceInfo>
+  </entry>
+</com.hundsun.gaps.navigator.resource.ResourceMapping>

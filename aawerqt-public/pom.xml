@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>asdad</groupId>
+    <artifactId>aawerqt</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>aawerqt-public</artifactId>
+  <packaging>pom</packaging>
+  <name>公共应用组</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.hundsun.gaps.suportmodule </groupId>
+      <artifactId> com.hundsun.gaps.flowcomponents</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.hundsun.gaps.flowexecutor </groupId>
+      <artifactId> com.hundsun.gaps.flowexecutor</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.hundsun.gaps.log.log4j2 </groupId>
+      <artifactId> com.hundsun.gaps.log.log4j2</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.hundsun.gaps.suportmodule </groupId>
+      <artifactId> com.hundsun.gaps.matedatasuport</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.hundsun.gaps.suportmodule </groupId>
+      <artifactId> com.hundsun.gaps.mybatissuport</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.hundsun.gaps.suportmodule </groupId>
+      <artifactId> com.hundsun.gaps.desensitizationsuport</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok </groupId>
+      <artifactId> lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.oval </groupId>
+      <artifactId> oval </artifactId>
+      <version> 1.90</version>
+    </dependency>
+  </dependencies>
+  <modules>
+  	<module>aawerqt-public-app</module>
+  </modules>
+</project>
