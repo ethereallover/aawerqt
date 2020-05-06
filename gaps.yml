@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: {{ qqwe }}
+  namespace: {{ hengsheng }}
   name: {{ APP_NAME }}-qweq
   labels:
     app: {{ APP_NAME }}-qweq
