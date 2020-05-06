@@ -2,27 +2,27 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: {{ hengsheng }}
-  name: {{ APP_NAME }}-qweq
+  name: {{ APP_NAME }}-aqwsedrf
   labels:
-    app: {{ APP_NAME }}-qweq
+    app: {{ APP_NAME }}-aqwsedrf
 spec:
   selector:
     matchLabels:
-      app: {{ APP_NAME }}-qweq
+      app: {{ APP_NAME }}-aqwsedrf
   template:
     metadata:
       labels:
-        app: {{ APP_NAME }}-qweq
+        app: {{ APP_NAME }}-aqwsedrf
     spec:
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
                 - matchExpressions:
-                  - key: {{ sss }}
+                  - key: {{ sit1 }}
                     operator: In
                     values:
-                      - {{ dsf }}
+                      - {{ beijingfh }}
       initContainers:
         - name: init-myapp
           image: 103.160.119.30/daocloud/busybox:v3
@@ -36,8 +36,8 @@ spec:
       imagePullSecrets:
       	- name: images-103.160.119.30
       containers:
-        - image: {{ qwe.image }}
-          name: {{ APP_NAME }}-qweq
+        - image: {{ aqwsedrf.image }}
+          name: {{ APP_NAME }}-aqwsedrf
           securityContext:
             runAsUser: 810
           resources:
@@ -48,10 +48,10 @@ spec:
               memory: "0"
               cpu: "0"
           ports:
-            - containerPort: 9080
+            - containerPort: 90800
           env:
             - name: SW_AGENT_NAME
-              value: {{ APP_NAME }}-qweqwe
+              value: {{ APP_NAME }}-aqwsedrf
             - name: APOLLO_APP_ID
               value: {{ apollo-config-group }}
             - name: oid
@@ -67,19 +67,19 @@ spec:
                 name: dmp-user-config
           livenessProbe:
             tcpSocket:
-              port: 9080
+              port: 90800
             initialDelaySeconds: 30
             timeoutSeconds: 5
             periodSeconds: 15
           readinessProbe:
             tcpSocket:
-              port: 9080
+              port: 90800
             initialDelaySeconds: 30
             timeoutSeconds: 5
             periodSeconds: 15
           volumeMounts:
             - name: app-imgs
-              mountPath: /qweq/data
+              mountPath: /aqwsedrf/data
             - name: app-logs
               mountPath: /logs
       volumes:
@@ -88,7 +88,7 @@ spec:
             path: /etc/localtime
         - name: app-logs
           hostPath:
-            path: /data/qweq/qweq-log
+            path: /data/aqwsedrf/aqwsedrf-log
         - name: app-imgs
           hostPath:
-            path: /data/qweq/qweq-data
+            path: /data/aqwsedrf/aqwsedrf-data
